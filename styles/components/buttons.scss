@@ -1,0 +1,52 @@
+/*
+Buttons
+
+Button styles used in the styleguide
+
+default   - Default button
+.primary  - Primarysass button
+:disabled - Disabled button
+
+markup:
+<button class="sb-btn {$modifiers}">Button text</button>
+
+Styleguide 2.1
+*/
+
+.sb-btn {
+  display: inline;
+
+  margin-right: 8px;
+  padding: 8px;
+
+  cursor: pointer;
+
+  color: white;
+  border-radius: 5px;
+  background-color: $default-action-color;
+
+  &:hover {
+    background-color: lighten($default-action-color, $action-color-change);
+  }
+  &:active {
+    background-color: darken($default-action-color, $action-color-change);
+  }
+
+  &.primary {
+    color: white;
+    background-color: $primary-action-color;
+    &:hover {
+      background-color: lighten($primary-action-color, $action-color-change);
+    }
+    &:active {
+      background-color: darken($primary-action-color, $action-color-change);
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+
+    color: #999;
+    background-color: $secondary-color;
+  }
+}

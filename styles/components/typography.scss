@@ -1,0 +1,54 @@
+
+/*
+Headings
+
+These are our headings
+
+markup:
+<h1 class="sb">Heading 1</h1>
+<p class="sb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa ipsum, tincidunt vel convallis in, suscipit et risus. Morbi erat dolor, mattis at dignissim sed, feugiat sed lorem.
+<h2 class="sb">Heading 2</h2>
+<p class="sb">Mauris feugiat suscipit turpis, ut rhoncus lectus finibus sed. Etiam suscipit consectetur eros vitae venenatis.</p>
+<h3 class="sb">Heading 3</h3>
+<p class="sb">Ut leo ipsum, tincidunt vel mauris eget, convallis egestas justo. Nunc ligula neque, porta ac lorem id, ultrices dapibus dolor.</p>
+<h4 class="sb">Heading 4</h4>
+<p class="sb"> Phasellus interdum massa ante, ac placerat felis ultricies at. Fusce vulputate, odio sed convallis laoreet, tortor orci venenatis massa, a placerat ligula nisl vitae felis. In pellentesque ornare eleifend. Suspendisse potenti. Quisque eget mauris enim.</p>
+<h5 class="sb">Heading 5</h5>
+
+Styleguide 1.2
+*/
+
+h1.sb,
+h2.sb,
+h3.sb,
+h4.sb,
+h5.sb {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 1.414em 0 .5em;
+  color: #444;
+}
+
+h1.sb {
+  font-size: 3.157em;
+
+  margin-top: .5em;
+}
+
+h2.sb {
+  font-size: 2.369em;
+}
+
+h3.sb {
+  font-size: 1.777em;
+}
+
+h4.sb {
+  font-size: 1.333em;
+}
+
+h4.sb,
+h5.sb {
+  font-weight: 500;
+}

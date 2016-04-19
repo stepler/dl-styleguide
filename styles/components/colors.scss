@@ -1,0 +1,31 @@
+/*
+Main colors
+
+$primary-color        - Primary color
+$secondary-color      - Secondary color
+$primary-action-color - Primary button color
+$default-action-color - Default button color and link color
+$tertiary-color       - Used for input hovers and hilights
+
+markup:
+<div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+
+Styleguide 1.1
+*/
+
+
+
+.color-preview {
+  box-sizing: border-box;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  margin-bottom: .5em;
+  padding: 0;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  text-shadow: #000 0 0 2px;
+}
