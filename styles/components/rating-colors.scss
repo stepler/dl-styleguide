@@ -1,0 +1,48 @@
+/*
+Rating colors
+
+.rating_aaa - Rating AAA
+.rating_aa  - Rating AA
+.rating_a   - Rating A
+.rating_bbb - Rating BBB
+.rating_bb  - Rating BB
+.rating_b   - Rating B
+.rating_ccc - Rating CCC
+.rating_cc  - Rating CC
+.rating_c   - Rating C
+.rating_nr  - Rating NR
+
+markup:
+<span class="{$modifiers}">Some text</span>
+
+Styleguide 4.1
+*/
+
+/* VARIABLES */
+
+$ratingAAA: #72CEFF;
+$ratingAA:  #EF7C00;
+$ratingA:   #A800CC;
+$ratingBBB: #00903A;
+$ratingBB:  #47599D;
+$ratingB:   #FF6E7E;
+$ratingCCC: #FFD400;
+$ratingCC:  #AF6725;
+$ratingC:   #B04127;
+$ratingNR:  #CCCCCC;
+
+
+/* STYLES */
+
+.rating {
+    &_aaa { color: $ratingAAA; }
+    &_aa  { color: $ratingAA; }
+    &_a   { color: $ratingA; }
+    &_bbb { color: $ratingBBB; }
+    &_bb  { color: $ratingBB; }
+    &_b   { color: $ratingB; }
+    &_ccc { color: $ratingCCC; }
+    &_cc  { color: $ratingCC; }
+    &_c   { color: $ratingC; }
+    &_nr  { color: $ratingNR; }
+}

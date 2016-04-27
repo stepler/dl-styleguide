@@ -3,50 +3,85 @@ Buttons
 
 Button styles used in the styleguide
 
-default   - Default button
-.primary  - Primarysass button
-:disabled - Disabled button
+.btn_blue           - Blue button
+.btn_blue:hover     - Blue button hover
+.btn_blue:active    - Blue button active
+.btn_blue:disabled  - Blue button disabled
+.btn_blue14         - Disabled button
 
 markup:
-<button class="sb-btn {$modifiers}">Button text</button>
+<button class="{$modifiers}">Button text</button>
 
 Styleguide 2.1
 */
 
-.sb-btn {
-  display: inline;
+/* VARIABLES */
 
-  margin-right: 8px;
-  padding: 8px;
+$btnColorBlue: #48C;
+$btnBgBlue: rgba(68, 136, 204, 0.1);
+$btnBgBlue_Hover: rgba(68, 136, 204, 0.25);
+$btnBgBlue_Active: rgba(68, 136, 204, 0.4);
 
-  cursor: pointer;
+$btnColorGray: #999;
+$btnBgGray: rgba(0, 0, 0, 0.1);
 
-  color: white;
-  border-radius: 5px;
-  background-color: $default-action-color;
 
-  &:hover {
-    background-color: lighten($default-action-color, $action-color-change);
-  }
-  &:active {
-    background-color: darken($default-action-color, $action-color-change);
-  }
+/* STYLES */
 
-  &.primary {
-    color: white;
-    background-color: $primary-action-color;
-    &:hover {
-      background-color: lighten($primary-action-color, $action-color-change);
+.btn {
+
+    &_blue,
+    &_blue14 {
+        display: inline-block;
+        background: none;
+        padding: 2px;
+        margin: 0;
+        user-select: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+        align-self: center;
+
+        &:focus {
+            outline-style: none
+        }
     }
-    &:active {
-      background-color: darken($primary-action-color, $action-color-change);
+
+    &_blue,
+    &_blue14 {
+        color: $btnColorBlue;
+        background: $btnBgBlue;
+
+        &:hover {
+            background: $btnBgBlue_Hover;
+        }
+
+        &:active {
+            background: $btnBgBlue_Active;
+        }
+
+        &.disabled,
+        &:disabled {
+            &, 
+            &:hover, 
+            &:active {
+                color: $btnColorGray;
+                background: $btnBgGray; 
+            }
+        }
     }
-  }
+    
+    &_blue {
+        font-size: 12px;
+        line-height: 12px;
+    }
 
-  &:disabled {
-    cursor: default;
+    &_blue14 {
+        font-size: 14px;
+        line-height: 14px;
+    }
 
-    color: #999;
-    background-color: $secondary-color;
-  }
+    * + & {
+        margin-left: 10px;
+    }
 }

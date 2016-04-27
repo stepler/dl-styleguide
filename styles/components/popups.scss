@@ -1,0 +1,92 @@
+/*
+Popups
+
+.popup          - Just popup
+.popup_ltop     - Top popup with left arrow
+.popup_rtop     - Top popup with right arrow
+
+markup:
+<style type="text/css">
+    div { height: 50px; }
+    div > div { height: 50px; width:400px; text-align: center }
+</style>
+<div>
+    <div class="{$modifiers}"></div>
+</div>
+
+Styleguide 3.1
+*/
+
+/* VARIABLES */
+
+$popupBg: #FFF;
+$popupBorder: #DDD;
+
+
+/* STYLES */
+
+.popup {
+
+    &,
+    &_ltop,
+    &_rtop {
+        position: absolute;
+        display: block;
+        border: 1px solid $popupBorder;
+        border-radius: 3px;
+        background: $popupBg;
+        /* right: 0; */
+        z-index: 100;
+    }
+
+    &_ltop,
+    &_rtop {
+        margin-top: 6px;
+
+        &:after, &:before {
+            position: absolute;
+            bottom: 100%;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            content: '';
+            pointer-events: none;
+        }
+    }
+        
+    &_rtop {
+        &:after, &:before {
+            right: 12px;
+        }
+        &:after {
+            margin-right: -5px;
+            border-width: 5px;
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #FFF;
+        }
+        &:before {
+            margin-right: -6px;
+            border-width: 6px;
+            border-color: rgba(221, 221, 221, 0);
+            border-bottom-color: #DDD;
+        }
+    }
+        
+    &_ltop {
+        &:after, &:before {
+            left: 12px;
+        }
+        &:after {
+            margin-left: -5px;
+            border-width: 5px;
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #FFF;
+        }
+        &:before {
+            margin-left: -6px;
+            border-width: 6px;
+            border-color: rgba(221, 221, 221, 0);
+            border-bottom-color: #DDD;
+        }
+    }
+}

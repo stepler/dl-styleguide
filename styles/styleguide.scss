@@ -10,9 +10,18 @@
 
 // 1
 @import 'pages/colors_typography.scss';
-@import 'components/colors.scss';
-@import 'components/typography.scss';
+// @import 'components/colors.scss';
+// @import 'components/typography.scss';
+@import 'components/grid.scss';
 
 // 2
 @import 'pages/buttons.scss';
 @import 'components/buttons.scss';
+
+// 3
+@import 'pages/components.scss';
+@import 'components/popups.scss';
+
+// 4
+@import 'pages/content-components.scss';
+@import 'components/rating-colors.scss';
