@@ -1,0 +1,19 @@
+{
+  "name": "skybonds-styleguide",
+  "description": "",
+  "main": "index.js",
+  "authors": [],
+  "license": "ISC",
+  "homepage": "https://github.com/datalaboratory/styleguide",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datalaboratory/styleguide.git"
+  },
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "**/*",
+    "!dest",
+    "!styles"
+  ]
+}
