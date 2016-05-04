@@ -11,9 +11,8 @@
   },
   "moduleType": [],
   "ignore": [
-    "**/.*",
     "**/*",
-    "!dest",
-    "!styles"
+    "!dest/**/*",
+    "!styles/**/*"
   ]
 }
